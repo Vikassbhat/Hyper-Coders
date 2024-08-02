@@ -1,0 +1,148 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+/* Navbar styles */
+nav {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+}
+/* Carousel styles */
+.carousel {
+	--current-slide: 0;
+	position: relative;
+	overflow: hidden;
+}
+
+.carousel-button {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 1;
+	padding: 0;
+	margin: 0.5rem;
+	border-radius: 50%;
+	background-color: transparent;
+	border: none;
+	font-size: 1.5rem;
+	cursor: pointer;
+	transition: color 0.1s;
+}
+
+.carousel-button:hover {
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-button_next {
+	right: 0;
+}
+
+.slides {
+	display: flex;
+	transition: transform 0.5s;
+	transform: translateX(calc(-100% * var(--current-slide)));
+}
+
+.slide {
+	flex: 0 0 100%;
+}
+/* Here the carousel ends  */
+/* About section styles */
+#about {
+	/* Add your about section styles here */
+}
+
+
+/* Contact form styles */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  * {
+	box-sizing: border-box;
+  }
+  
+  /* Style inputs */
+  input[type=text], select, textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+  }
+  
+  input[type=submit] {
+	background-color: #04AA6D;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	cursor: pointer;
+  }
+  
+  #contact{
+	padding: 100px;
+  }
+
+  input[type=submit]:hover {
+	background-color: #45a049;
+  }
+  
+  /* Style the container/contact section */
+  .container {
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 10px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+	float: left;
+	width: 50%;
+	margin-top: 6px;
+	padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+	.column, input[type=submit] {
+	  width: 100%;
+	  margin-top: 0;
+	}
+  }
+
+  /* conatct ends here */
+ 
+/* Footer styles */
+footer{
+	background-color:#000000;
+	text-align: center;
+	color:#fff;
+	padding:100px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+
+}
+
+#info_svg{
+	text-align: left;
+	padding-bottom: 25px;
+}
+svg{
+	padding: 0px;
+	text-align: center;
+}
+#contact-details-head{
+	text-shadow: #ccc;
+	font-size: 40px;
+	padding-bottom: 0px;
+}
